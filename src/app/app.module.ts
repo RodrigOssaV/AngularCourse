@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 
 /** componentes/navbar 
  * esto es sin modularización
+ import { NavbarComponent } from './componentes/navbar/navbar.component';
 */
-// import { NavbarComponent } from './componentes/navbar/navbar.component';
 
 /** importo modulo componentes 
  * al momento de importar un modulo, debo importar ese modulo
@@ -18,6 +18,9 @@ import { ComponentesModule } from "./componentes/componentes.module";
 /** importo los modulos de páginas
  * al momento de importar el modulo de páginas, debo importar ese modulo
  */
+// import { HomeComponent } from './paginas/home/home.component';
+// import { PrincipalComponent } from './paginas/principal/principal.component';
+import { PaginasModule } from "./paginas/paginas.module";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { ComponentesModule } from "./componentes/componentes.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    PaginasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
