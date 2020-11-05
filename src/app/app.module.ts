@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+/* AppRoutingModule se debe importar a los demás modulos para utilizar routerLink */
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 

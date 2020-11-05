@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from "../app-routing.module";
 
 /** Importo los compontenes página */
 import { HomeComponent } from "./home/home.component";
@@ -11,7 +12,8 @@ import { PrincipalComponent } from "./principal/principal.component";
     PrincipalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports:[
     HomeComponent,
